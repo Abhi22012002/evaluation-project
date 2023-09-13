@@ -1,14 +1,23 @@
 body{
  background-color: rgb(97, 229, 97) ;   
 }
-h2{
+.nameslabel{
+    display: block;
     width: 135px;
    
     top: 78px;
     left: 258px;
+   
     color: white;
     margin-left: 25px;
-    margin-bottom: 25px;
+    
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
 
 
 }
@@ -30,10 +39,12 @@ h2{
 #scoreboard{
     display: flex;
     justify-content: space-evenly;
+   
 }
 
-#user{
+.scorebox{
     
+   
     width: 139px;
     height: 128px;
     top: 77px;
@@ -41,14 +52,38 @@ h2{
     border-radius: 9px;
     background-color: white;
     margin: 15px;
+    align-items: center;
+   
     
 }
-#computer{
-    width: 139px;
-    height: 128px;
-    top: 77px;
-    left: 713px;
-    border-radius: 9px;
-    background-color: white;
-     margin: 15px;
+
+.scorelabel{
+    display: block;
+     margin: auto;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color:  #252525;
+    width: auto;
+
+}
+
+.scoredisplay{
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    height: 63px;
+    top: 128px;
+    left: 742px;
+    font-family: Roboto;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    resize: none;
 }
