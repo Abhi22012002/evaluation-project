@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root">
+
         <div id="score">
                     <div id=" names">
                         <label class="nameslabel">ROCK</label>
@@ -19,22 +19,36 @@
                         <div  class="scorebox" id ="user"> 
                           <label class="scorelabel">YOUR</label>
                           <label class="scorelabel">SCORE</label>
-
                           <textarea readonly id="userscore" class="scoredisplay">0</textarea> 
-
                         </div>
                             
                         <div class="scorebox" id="computer">
                             <label class="scorelabel"> COMPUTER</label>
                             <label class="scorelabel"> SCORE</label>
-
                             <textarea readonly id="compscore" class="scoredisplay">0 </textarea>
-
-
-                        
                         </div>
                     </div>
         </div>
-    </div>
+   
+
+         <div id="playingarea">
+
+            <div id="rock" class="play play-rock ">
+                <img class="play-image" src="rock.png" alt="none">
+
+            </div>
+            <div id="paper" class="play play-paper">
+                <img class="play-image" src="paper.png" alt="none">
+
+            </div>
+            <div id="scissor" class="play play-scissor">
+                <img class="play-image" src="scissor.png" alt="none">
+
+            </div>
+
+
+
+         </div>
+    
 </body>
 </html>
