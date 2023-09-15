@@ -1,29 +1,26 @@
 body{
     
     
- background-color: rgb(97, 229, 97) ;   
+ background-color: rgb(125, 203, 125) ;   
 
 }
-.root-score{
+#root-score{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 
 }
-.root-playingarea
+#root-playingarea
 {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 .nameslabel{
     display: block;
     width: 135px;
-   
-    top: 78px;
-    left: 258px;
-   
     color: white;
     margin-left: 25px;
-    
     font-family: Roboto;
     font-size: 40px;
     font-weight: 600;
@@ -40,8 +37,6 @@ body{
     border: 2px solid white;
     width: 800px;
     height: 158px;
-    top: 62px;
-    left: 240px;
     border-radius: 13px;
     justify-content: space-between;
 
@@ -155,7 +150,7 @@ body{
     height: 0;
     transform: rotate(60deg);
     border: 7px solid #000000a3;
-    border-radius: 12%;
+   
     padding: 0;
 }
 .line3{
@@ -164,4 +159,59 @@ body{
     transform: rotate(120deg);
     border: 7px solid #000000a3;
     padding: 0;
+}
+.rules-button{
+    background-color: transparent;
+    color: #ffff;
+    border: 2px solid #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+    
+}
+#rules-model{
+  
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    right: 40px;
+    bottom: 80px;
+    border: 3px solid darkorange;
+    width: 240px;
+    color: #ffff;
+    background-color: #004429;
+    border: 7px solid #ffffff;
+    border-radius: 13px;
+    padding: 1.8rem;
+    z-index: 7;
+    animation-name: closeModal;
+    animation-duration: 0.5s;
+    display: none;
+}
+.rules-list{
+    font-size: 17px;
+    list-style: square;
+    text-align: left;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.008em;
+    text-align: justify;
+}
+#rule-close{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: -31px;
+    top: -29px;
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }

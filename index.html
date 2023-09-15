@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <title>Document</title>
 </head>
 <body>
-    <div class="root-score">
+    <div id="root-score">
 
         <div id="score">
                     <div id=" names">
@@ -32,7 +33,7 @@
         </div>
     </div>
 
-    <div class="root-playingarea">
+    <div id="root-playingarea">
 
          <div id="playingarea">
 
@@ -51,14 +52,21 @@
                 <img class="play-image" src="scissor.png" alt="none">
 
             </div>
-            
-            
-           
-
-
-
          </div>
     </div>
-    
+
+   
+    <div id="rules-model">
+        <h3>GAME RULES</h3>
+        <ul class="rules-list">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.  </li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.” </li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+        </ul>
+        <button id="rule-close" onclick="hideRules()">X</div>
+    </div>
+    <div class="rules-bt">
+        <button class="rules-button" onclick="dispRules()" >rules</button>
+    </div>
 </body>
 </html>
