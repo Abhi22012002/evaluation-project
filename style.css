@@ -1,9 +1,18 @@
 body{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+    
  background-color: rgb(97, 229, 97) ;   
 
+}
+.root-score{
+    display: flex;
+    justify-content: center;
+
+}
+.root-playingarea
+{
+    display: flex;
+    justify-content: center;
 }
 .nameslabel{
     display: block;
@@ -91,44 +100,68 @@ body{
 
 #playingarea{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    border:3px solid white;
-    width: 600px;
-    height: 400px;
-    top: 62px;
-    left: 240px;
-    border-radius: 13px;
-    margin-top: 35px;
+    
+    width: 450px;
+    height: 380px;
+    margin-top: 20px;
+   
+    
+
+    
    
 
 }
 .play{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color:white;
   border-radius: 50%;
   width: 110px;
   height: 110px;
-  top: 329px;
-  left: 477px;
+  z-index: 100;
   
 }
 .play-rock{
-    display: flex;
+   
     border: 16px solid #0074b6;
 }
 .play-paper{
-    display: flex;
+   
     border: 16px solid #ffa943;
-    align-self: flex-end;
-    
+   
+    margin-top: 0;
 
 }
 .play-scissor{
-    display: flex; 
+    margin-left: 0%;
     border: 16px solid #bd00ff;
-  
-  
+    align-self: center;
+   
+}
+.line1{
+    margin-top: 60px;
+    width: 152px;
+    height: 0;
+    border: 7px solid #000000a3;
+    padding: 0;
+    position: relative;
+}
+.line2{
+    width: 200px;
+    height: 0;
+    transform: rotate(60deg);
+    border: 7px solid #000000a3;
+    border-radius: 12%;
+    padding: 0;
+}
+.line3{
+    width: 200px;
+    height: 0;
+    transform: rotate(120deg);
+    border: 7px solid #000000a3;
+    padding: 0;
 }
