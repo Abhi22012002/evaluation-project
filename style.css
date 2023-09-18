@@ -1,13 +1,21 @@
+
 body{
     
     
  background-color: rgb(125, 203, 125) ;   
 
 }
+h3{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+    color: white;
+    text-transform: uppercase;
+}
+
 #root-score{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 
 }
 #root-playingarea
@@ -22,7 +30,7 @@ body{
     color: white;
     margin-left: 25px;
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 17px;
     font-weight: 600;
     line-height: 47px;
     letter-spacing: 0.1em;
@@ -97,48 +105,55 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-    width: 450px;
-    height: 380px;
-    margin-top: 20px;
-   
-    
-
-    
-   
+    width: 530px;
+    height: 440px;
 
 }
-.play{
+
+.play-rock{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color:white;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
+  width: 150px;
+  height: 150px;
   z-index: 100;
-  
-}
-.play-rock{
    
     border: 16px solid #0074b6;
 }
 .play-paper{
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
     border: 16px solid #ffa943;
-   
     margin-top: 0;
 
 }
 .play-scissor{
-    margin-left: 0%;
-    border: 16px solid #bd00ff;
-    align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  z-index: 100;
+  margin-left: 0%;
+  border: 16px solid #bd00ff;
+  align-self: center;
    
 }
 .line1{
-    margin-top: 60px;
+    margin-top: 80px;
     width: 152px;
     height: 0;
     border: 7px solid #000000a3;
@@ -146,7 +161,7 @@ body{
     position: relative;
 }
 .line2{
-    width: 200px;
+    width: 220px;
     height: 0;
     transform: rotate(60deg);
     border: 7px solid #000000a3;
@@ -154,7 +169,7 @@ body{
     padding: 0;
 }
 .line3{
-    width: 200px;
+    width: 220px;
     height: 0;
     transform: rotate(120deg);
     border: 7px solid #000000a3;
@@ -170,7 +185,10 @@ body{
     border-radius: 8px;
     text-transform: uppercase;
     cursor: pointer;
-    float: right;
+    position: fixed;
+    bottom: 5px;
+    right: 9px; 
+
     
 }
 #rules-model{
@@ -219,3 +237,40 @@ body{
     font-weight: 500;
     
 }
+ #root-result{
+    display: none;
+    justify-content: center;
+    
+
+ }
+ .result-board{
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+    margin-top: 100px;
+    
+    justify-content:space-around;
+    align-items: center;
+   
+    
+ }
+ .play-again-btn{
+    background: #ffffff;
+    color: #6b6b6b;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.6rem 1.8rem;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+    
+    
+
+ }

@@ -33,22 +33,42 @@
         </div>
     </div>
 
+    <div id="root-result">
+
+        <div class="result-board">
+            <h3>You Picked</h3>
+            <div id="you-picked" >
+                <img id="you-picked-image" src="">
+            </div> 
+            <h3 > You Won </h3>
+            <button class="play-again-btn">play again</button>
+           
+            <h3>Pc picked</h3>
+            <div id="computer-picked" >  
+                <img  id="computer-picked-image" src="" >
+            </div>
+
+        </div>
+         
+
+    </div>
+
     <div id="root-playingarea">
 
          <div id="playingarea">
 
-            <div id="rock" class="play play-rock ">
+            <div id="rock" class="play-rock  " onclick="show()">
                 <img class="play-image" src="rock.png" alt="none">
 
             </div>
             <div class="line1"> </div>
-            <div id="paper" class="play play-paper">
+            <div id="paper" class="play-paper">
                 <img class="play-image" src="paper.png" alt="none">
             </div>
             <div class="line2"> </div>
             <div class="line3"> </div>
 
-            <div id="scissor" class="play play-scissor" >
+            <div id="scissor" class="play-scissor" >
                 <img class="play-image" src="scissor.png" alt="none">
 
             </div>
@@ -68,5 +88,8 @@
     <div class="rules-bt">
         <button class="rules-button" onclick="dispRules()" >rules</button>
     </div>
+    
+    
+
 </body>
 </html>
