@@ -2,7 +2,7 @@
 sessionStorage.userScore;
 sessionStorage.computerScore;
 
-  
+   
 function display_result(){
     const playingarea = document.getElementById("root-playingarea");
     const result =  document.getElementById("root-result");
@@ -31,15 +31,26 @@ let show_rock=function(){
     if(computer_picked == 'paper')
     {  
        document.getElementById("win-status").innerHTML="Computer Won";
-       sessionStorage.computerScore=Number(sessionStorage.computerScore)+1;
+       if(sessionStorage.computerScore)
+       {
+       sessionStorage.computerScore=Number(sessionStorage.userScore)+1;
+       } else{
+           sessionStorage.computerScore=1;
+       }
        document.getElementById("compscore").innerHTML=sessionStorage.computerScore;
     }
      else if(computer_picked== 'scissor')
     {
        
         document.getElementById("win-status").innerHTML="You Won ";
+        if(sessionStorage.userScore)
+        {
         sessionStorage.userScore=Number(sessionStorage.userScore)+1;
+        } else{
+            sessionStorage.userScore=1;
+        }
         document.getElementById("userscore").innerHTML=sessionStorage.userScore;
+        document.getElementById("next-btn").style.display="block";
     }
     else{
         document.getElementById("win-status").innerHTML="Tie";
@@ -62,14 +73,25 @@ let show_paper=function(){
    if(computer_picked == 'scissor')
    {
       document.getElementById("win-status").innerHTML="Computer Won";
-      sessionStorage.computerScore=Number(sessionStorage.computerScore)+1;
+      if(sessionStorage.computerScore)
+      {
+      sessionStorage.computerScore=Number(sessionStorage.userScore)+1;
+      } else{
+          sessionStorage.computerScore=1;
+      }
       document.getElementById("compscore").innerHTML=sessionStorage.computerScore;
     
    } else if(computer_picked== 'rock')
    {
        document.getElementById("win-status").innerHTML="You Won ";
-       sessionStorage.userScore=Number(sessionStorage.userScore)+1;
+       if(sessionStorage.userScore)
+        {
+        sessionStorage.userScore=Number(sessionStorage.userScore)+1;
+        } else{
+            sessionStorage.userScore=1;
+        }
        document.getElementById("userscore").innerHTML=sessionStorage.userScore;
+       document.getElementById("next-btn").style.display="block";
    }
    else{
        document.getElementById("win-status").innerHTML="Tie";
@@ -91,13 +113,24 @@ let show_scissor=function(){
    if(computer_picked == 'paper')
    {
       document.getElementById("win-status").innerHTML="You Won";
-      sessionStorage.userScore=Number(sessionStorage.userScore)+1;
+      if(sessionStorage.userScore)
+        {
+        sessionStorage.userScore=Number(sessionStorage.userScore)+1;
+        } else{
+            sessionStorage.userScore=1;
+        }
       document.getElementById("userscore").innerHTML=sessionStorage.userScore;
+      document.getElementById("next-btn").style.display="block";
    } 
    else if(computer_picked== 'rock')
    {
        document.getElementById("win-status").innerHTML="Computer Won ";
-       sessionStorage.computerScore=Number(sessionStorage.computerScore)+1;
+       if(sessionStorage.computerScore)
+       {
+       sessionStorage.computerScore=Number(sessionStorage.userScore)+1;
+       } else{
+           sessionStorage.computerScore=1;
+       }
        document.getElementById("compscore").innerHTML=sessionStorage.computerScore;
    }
    else{
@@ -126,3 +159,13 @@ let dispRules=function(){
 let hideRules=function(){
     document.getElementById("rules-model").style.display = "none";
 }
+let hurray=function()
+{
+    document.getElementById("root").style.display="none";
+    document.getElementById("rules-model").style.display="none";
+    document.getElementById("final-page").style.display="flex";
+    sessionStorage.computerScore=0;
+    sessionStorage.userScore=0;
+}
+
+

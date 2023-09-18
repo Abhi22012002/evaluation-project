@@ -9,6 +9,7 @@
     <title>Rock paper Scissor</title>
 </head>
 <body>
+    <div id="root">
     <div id="root-score">
 
         <div id="score">
@@ -42,7 +43,7 @@
             </div> 
             <h3 id="win-status" > </h3>
             <button id="playagainbtn" class="play-again-btn" onclick="playagain()" >play again</button>
-            <button id="next-btn"  >next</button>
+            <button id="next-btn"  onclick="hurray()">next</button>
             <h3>Pc picked</h3>
             <div id="computer-picked" >  
                 <img  id="computer-picked-image" src="" >
@@ -88,7 +89,15 @@
     <div class="rules-bt">
         <button class="rules-button" onclick="dispRules()" >rules</button>
     </div>
+
+
+</div>
+<div class="final" id="final-page">
+    <img src="Group 5Stars.png">
+    <img src="VectorTrophy.png">
+    <h1 style="color: white;">HURRAY!!</h1>
     
+</div>
     
 
 </body>

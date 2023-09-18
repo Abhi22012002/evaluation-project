@@ -291,3 +291,11 @@ h3{
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.final{
+
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
