@@ -2,7 +2,7 @@
 body{
     
     
- background-color: #8cc461 ;   
+ background-color: rgb(131, 178, 131) ;   
 
 }
 h3{
@@ -280,19 +280,16 @@ h3{
  }
 #next-btn{
     display: none;
-    background-color: transparent;
-    color: #ffff;
-    border: 2px solid #ffff;
-    font-size: 18px;
+    background: #ffffff;
+    color: #6b6b6b;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 20px;
     font-weight: 500;
-    padding: 0.6rem 1.5rem;
-    border-radius: 8px;
+    padding: 0.6rem 1.8rem;
+    
     text-transform: uppercase;
     cursor: pointer;
-    position: absolute;
-    bottom: 5px;
-    right: 160px; 
-
 }
 
 .final{

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0079)file:///Users/abhi/Desktop/Micro%20Projects/Evaluation%20Project%201/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./Rock paper Scissor_files/style.css">
+    <script src="./Rock paper Scissor_files/script.js"></script>
 
     <title>Rock paper Scissor</title>
 </head>
@@ -19,34 +19,34 @@
                         <label class="nameslabel">SCISSORS</label>
                     </div>
                     <div id="scoreboard">
-                        <div  class="scorebox" id ="user"> 
+                        <div class="scorebox" id="user"> 
                           <label class="scorelabel">YOUR</label>
                           <label class="scorelabel">SCORE</label>
-                          <textarea readonly id="userscore" class="scoredisplay">0</textarea> 
+                          <textarea readonly="" id="userscore" class="scoredisplay">0</textarea> 
                         </div>
                             
                         <div class="scorebox" id="computer">
                             <label class="scorelabel"> COMPUTER</label>
                             <label class="scorelabel"> SCORE</label>
-                            <textarea readonly id="compscore" class="scoredisplay">0 </textarea>
+                            <textarea readonly="" id="compscore" class="scoredisplay">1</textarea>
                         </div>
                     </div>
         </div>
     </div>
 
-    <div id="root-result">
+    <div id="root-result" style="display: flex;">
 
         <div class="result-board">
             <h3>You Picked</h3>
-            <div id="you-picked" >
-                <img id="you-picked-image" src="">
+            <div id="you-picked" class="play-rock  ">
+                <img id="you-picked-image" src="./Rock paper Scissor_files/rock.png">
             </div> 
-            <h3 id="win-status" > </h3>
-            <button id="playagainbtn" class="play-again-btn" onclick="playagain()" >play again</button>
-            <button id="next-btn"  onclick="hurray()">next</button>
+            <h3 id="win-status">Computer Won</h3>
+            <button id="playagainbtn" class="play-again-btn" onclick="playagain()">play again</button>
+            <button id="next-btn" onclick="hurray()">next</button>
             <h3>Pc picked</h3>
-            <div id="computer-picked" >  
-                <img  id="computer-picked-image" src="" >
+            <div id="computer-picked" class="play-paper">
+                <img class="play-image" src="./Rock paper Scissor_files/paper.png" alt="none">
             </div>
 
         </div>
@@ -54,23 +54,23 @@
 
     </div>
 
-    <div id="root-playingarea">
+    <div id="root-playingarea" style="display: none;">
 
          <div id="playingarea">
 
             <div id="rock" class="play-rock  " onclick="show_rock()">
-                <img class="play-image" src="rock.png" alt="none">
+                <img class="play-image" src="./Rock paper Scissor_files/rock.png" alt="none">
 
             </div>
             <div class="line1"> </div>
             <div id="paper" class="play-paper" onclick="show_paper()">
-                <img class="play-image" src="paper.png" alt="none">
+                <img class="play-image" src="./Rock paper Scissor_files/paper.png" alt="none">
             </div>
             <div class="line2"> </div>
             <div class="line3"> </div>
 
             <div id="scissor" class="play-scissor" onclick="show_scissor()">
-                <img class="play-image" src="scissor.png" alt="none">
+                <img class="play-image" src="./Rock paper Scissor_files/scissor.png" alt="none">
 
             </div>
          </div>
@@ -84,21 +84,21 @@
             <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.” </li>
             <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
         </ul>
-        <button id="rule-close" onclick="hideRules()">X</div>
+        <button id="rule-close" onclick="hideRules()">X</button></div>
     </div>
     <div id="rulesBt" class="rules-bt">
-        <button class="rules-button" onclick="dispRules()" >rules</button>
+        <button class="rules-button" onclick="dispRules()">rules</button>
     </div>
 
 
-</div>
+
 <div class="final" id="final-page">
-    <img src="Group 5Stars.png">
-    <img src="VectorTrophy.png">
+    <img src="./Rock paper Scissor_files/Group 5Stars.png">
+    <img src="./Rock paper Scissor_files/VectorTrophy.png">
     <h1 style="color: white;">HURRAY!!</h1>
     
 </div>
     
 
-</body>
-</html>
+
+</body></html>
