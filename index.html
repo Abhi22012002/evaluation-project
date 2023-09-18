@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
-    <title>Document</title>
+    <title>Rock paper Scissor</title>
 </head>
 <body>
     <div id="root-score">
@@ -40,9 +40,9 @@
             <div id="you-picked" >
                 <img id="you-picked-image" src="">
             </div> 
-            <h3 > You Won </h3>
-            <button class="play-again-btn">play again</button>
-           
+            <h3 id="win-status" > </h3>
+            <button id="playagainbtn" class="play-again-btn" onclick="playagain()" >play again</button>
+            <button id="next-btn"  >next</button>
             <h3>Pc picked</h3>
             <div id="computer-picked" >  
                 <img  id="computer-picked-image" src="" >
@@ -57,18 +57,18 @@
 
          <div id="playingarea">
 
-            <div id="rock" class="play-rock  " onclick="show()">
+            <div id="rock" class="play-rock  " onclick="show_rock()">
                 <img class="play-image" src="rock.png" alt="none">
 
             </div>
             <div class="line1"> </div>
-            <div id="paper" class="play-paper">
+            <div id="paper" class="play-paper" onclick="show_paper()">
                 <img class="play-image" src="paper.png" alt="none">
             </div>
             <div class="line2"> </div>
             <div class="line3"> </div>
 
-            <div id="scissor" class="play-scissor" >
+            <div id="scissor" class="play-scissor" onclick="show_scissor()">
                 <img class="play-image" src="scissor.png" alt="none">
 
             </div>

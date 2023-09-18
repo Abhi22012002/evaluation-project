@@ -10,6 +10,7 @@ h3{
     letter-spacing: 0.1em;
     color: white;
     text-transform: uppercase;
+    
 }
 
 #root-score{
@@ -30,8 +31,8 @@ h3{
     color: white;
     margin-left: 25px;
     font-family: Roboto;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 27px;
+    font-weight: 800;
     line-height: 47px;
     letter-spacing: 0.1em;
     text-align: left;
@@ -120,8 +121,9 @@ h3{
   width: 150px;
   height: 150px;
   z-index: 100;
-   
     border: 16px solid #0074b6;
+    
+   
 }
 .play-paper{
     display: flex;
@@ -267,10 +269,25 @@ h3{
     
     text-transform: uppercase;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 5rem;
-    
-    
-    
 
  }
+ #win-status{
+    margin-top: 70px;
+    margin-bottom: 0;
+    font-size: 30px;
+ }
+#next-btn{
+    display: none;
+    background: #ffffff;
+    color: #6b6b6b;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.6rem 1.8rem;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+}
