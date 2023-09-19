@@ -4,6 +4,20 @@ sessionStorage.computerScore;
 
 
 
+
+
+
+let set=function()
+{
+    if(sessionStorage.userScore==undefined)
+    {
+        sessionStorage.userScore=0;
+        sessionStorage.computerScore=0;
+    }
+document.getElementById("compscore").innerHTML=sessionStorage.computerScore;
+document.getElementById("userscore").innerHTML=sessionStorage.userScore;
+}
+
 function display_result(){
     const playingarea = document.getElementById("root-playingarea");
     const result =  document.getElementById("root-result");
