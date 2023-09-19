@@ -2,7 +2,8 @@
 sessionStorage.userScore;
 sessionStorage.computerScore;
 
-   
+
+
 function display_result(){
     const playingarea = document.getElementById("root-playingarea");
     const result =  document.getElementById("root-result");
@@ -33,7 +34,7 @@ let show_rock=function(){
        document.getElementById("win-status").innerHTML="Computer Won";
        if(sessionStorage.computerScore)
        {
-       sessionStorage.computerScore=Number(sessionStorage.userScore)+1;
+       sessionStorage.computerScore=Number(sessionStorage.computerScore)+1;
        } else{
            sessionStorage.computerScore=1;
        }
@@ -75,7 +76,7 @@ let show_paper=function(){
       document.getElementById("win-status").innerHTML="Computer Won";
       if(sessionStorage.computerScore)
       {
-      sessionStorage.computerScore=Number(sessionStorage.userScore)+1;
+      sessionStorage.computerScore=Number(sessionStorage.computerScore)+1;
       } else{
           sessionStorage.computerScore=1;
       }
@@ -127,7 +128,7 @@ let show_scissor=function(){
        document.getElementById("win-status").innerHTML="Computer Won ";
        if(sessionStorage.computerScore)
        {
-       sessionStorage.computerScore=Number(sessionStorage.userScore)+1;
+       sessionStorage.computerScore=Number(sessionStorage.computerScore)+1;
        } else{
            sessionStorage.computerScore=1;
        }
@@ -149,6 +150,8 @@ let playagain=function(){
     
     playingarea.style.display="flex";
     result.style.display="none";
+    document.getElementById("next-btn").style.display="none";
+
 
     
 }
@@ -164,6 +167,7 @@ let hurray=function()
     document.getElementById("root").style.display="none";
     document.getElementById("rulesBt").style.display="none";
     document.getElementById("final-page").style.display="flex";
+   
     sessionStorage.computerScore=0;
     sessionStorage.userScore=0;
 }
